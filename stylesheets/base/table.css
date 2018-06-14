@@ -1,0 +1,51 @@
+:root {
+  
+  --table-background: #fff;
+  --table-color: #363636;
+  --table-td-th-text-align: left;
+  --table-td-th-vertical-align: top;
+
+
+
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 20px
+}
+
+*+table {
+  margin-top: 20px
+}
+
+.table {
+  background-color: var(--table-background);
+  color: var(--table-color);
+}
+
+table caption {
+  text-align: left;
+}
+
+table td,
+table th {
+  text-align: var(--table-td-th-text-align);
+  border: 1px solid #dbdbdb;
+  border-width: 0 0 1px;
+  padding: .5em .75em;
+  vertical-align: var(--table-td-th-vertical-align);
+}
+
+table thead td,
+table thead th {
+  border-width: 0 0 2px;
+}
+
+table tfoot td,
+table tfoot th {
+  border-width: 2px 0 0;
+}

@@ -1,0 +1,87 @@
+:root {
+  --button-color: #222;
+  --button-background: #dce2ff;
+  --button-font-family: inherit;
+  --button-font-size: 14px;
+  --button-font-weight: normal;
+  --button-padding: 6px 14px;
+  --button-height: 38px;
+
+  --button-color-hover: #222;
+  --button-background-hover: #555f5c;
+
+  --button-color-focus: #222;
+  --button-background-focus: #555f5c;
+
+  --button-color-active: #222;
+  --button-background-active: #555f5c;
+
+
+  --button-border: 0;
+  --button-user-select: none;
+  --button-text-transform: none;
+  --button-text-decoration: none;
+  --button-border-radius: 0;
+  --button-appearance: none;
+  --button-margin: 0;
+  --button-overflow: visible;
+  --button-cursore-not-disabled: pointer;
+  --button-opacity-disabled: .45;
+  --button-pointer-events-disabled: none;
+
+}
+
+.button {
+  margin: 0;
+  position: relative;
+  -webkit-appearance: var(--button-appearance);
+  -moz-appearance: var(--button-appearance);
+  border: var(--button-border);
+  user-select: var(--button-user-select);
+  border-radius: var(--button-border-radius);
+  overflow: var(--button-overflow);
+  font: inherit;
+  text-transform: var(--button-text-transform);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  min-height: var(--button-heigth);
+  text-decoration: var(--button-text-decoration);
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+.button:not(:disabled) {
+  cursor: var(--button-cursore-not-disabled);
+}
+
+.button::-moz-focus-inner {
+  border: var(--button-border);
+  padding: 0
+}
+
+.button:hover {
+  text-decoration: none;
+  background: var(--button-background-hover);
+  color: var(--button-color-hover);
+}
+
+.button:focus {
+  outline: none;
+  background: var(--button-background-focus);
+  color: var(--button-color-focus);
+}
+
+.button:active,
+.button.is-active {
+  background: var(--button-background-active);
+  color: var(--button-color-active);
+}
+
+.button:disabled {
+  pointer-events: var(--button-pointer-events-disabled);
+  opacity: var(--button-opacity-disabled);
+}
